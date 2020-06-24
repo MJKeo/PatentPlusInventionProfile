@@ -1,0 +1,27 @@
+/* cool input styling */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.input-box span {
+    position: absolute;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s;
+}
+
+.input-box input:valid ~span,
+.input-box input:focus ~span {
+    transform: translateY(-20px);
+    color: #2F60C4;
+}
+
+.input-box input {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    width: 25%;
+    min-width: 300px;
+}

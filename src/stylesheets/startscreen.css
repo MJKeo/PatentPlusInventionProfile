@@ -1,0 +1,52 @@
+.centering-div {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    animation: fade-in 0.75s linear forwards;
+    animation-delay: 0.25s;
+}
+
+.title-text {
+    font-size: 70px;
+    color: #2E2D2D;
+    font-family: "Poppins", sans-serif;
+}
+
+.large-button {
+    color: #2E71F7;
+    text-decoration: none;
+    border-radius: 10px;
+    border: solid;
+    border-color: #2E71F7;
+    background: none;
+    font-size: 40px;
+    margin-top: 60px;
+    transition: 0.2s;
+}
+
+/* Makes it so there's no border when you click on it */
+.large-button:focus {
+    outline: none;
+}
+
+.large-button:hover {
+    color: #6699FF;
+    border-color: #6699FF;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

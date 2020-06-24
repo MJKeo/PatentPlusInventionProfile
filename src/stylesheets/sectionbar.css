@@ -1,0 +1,61 @@
+.main-bar-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-bar-item {
+    width: 85px;
+    height: 85px;
+    border: solid;
+    border-color: #707070;
+    border-width: 2px;
+    border-radius: 42.5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-icon {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    opacity: 0.5;
+}
+
+.details-icon {
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    align-self: center;
+    opacity: 0.5;
+}
+
+.review-icon {
+    height: 45px;
+    width: 45px;
+    align-self: center;
+    opacity: 0.5;
+}
+
+.section-bar-line {
+    width: 15vw;
+    height: 2px;
+    background-color: #707070;
+}
+
+.section-bar-line-selected {
+    background-color: #6699FF;
+}
+
+.section-bar-image-selected {
+    opacity: 1 !important;
+}
+
+.selected {
+    border-color: #3366CC;
+}
