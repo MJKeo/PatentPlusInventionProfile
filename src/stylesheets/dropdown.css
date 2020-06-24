@@ -26,6 +26,7 @@
     border-radius: 5px;
     overflow: hidden;
     background: white;
+    z-index: 1;
 }
 
 .dropdown-item {

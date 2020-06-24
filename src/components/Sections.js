@@ -43,9 +43,7 @@ class Sections extends Component {
     }
 
     updateProgress(percent) {
-        this.setState({
-            progressBarPercent: percent
-        })
+        this.refs.percentBar.changeProgress(percent);
     }
 
     render() {
@@ -55,7 +53,7 @@ class Sections extends Component {
         return (
             <div class="content-div">
                 <SectionBar />
-                <ProgressBar percent={this.state.progressBarPercent}/>
+                <ProgressBar ref="percentBar"/>
                 {toBeRendered}
             </div>
         )
