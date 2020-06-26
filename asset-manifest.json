@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/PatentPlusInventionProfile/static/css/main.03b6626c.chunk.css",
+    "main.js": "/PatentPlusInventionProfile/static/js/main.57815689.chunk.js",
+    "main.js.map": "/PatentPlusInventionProfile/static/js/main.57815689.chunk.js.map",
+    "runtime-main.js": "/PatentPlusInventionProfile/static/js/runtime-main.02ed0bc3.js",
+    "runtime-main.js.map": "/PatentPlusInventionProfile/static/js/runtime-main.02ed0bc3.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/PatentPlusInventionProfile/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.896dc318.chunk.js": "/PatentPlusInventionProfile/static/js/2.896dc318.chunk.js",
+    "static/js/2.896dc318.chunk.js.map": "/PatentPlusInventionProfile/static/js/2.896dc318.chunk.js.map",
+    "index.html": "/PatentPlusInventionProfile/index.html",
+    "precache-manifest.889e5050c2587b70b327296fa07fc714.js": "/PatentPlusInventionProfile/precache-manifest.889e5050c2587b70b327296fa07fc714.js",
+    "service-worker.js": "/PatentPlusInventionProfile/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/PatentPlusInventionProfile/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.03b6626c.chunk.css.map": "/PatentPlusInventionProfile/static/css/main.03b6626c.chunk.css.map",
+    "static/js/2.896dc318.chunk.js.LICENSE.txt": "/PatentPlusInventionProfile/static/js/2.896dc318.chunk.js.LICENSE.txt",
+    "static/media/details-icon-default.png": "/PatentPlusInventionProfile/static/media/details-icon-default.d00d0783.png",
+    "static/media/details-icon-selected.png": "/PatentPlusInventionProfile/static/media/details-icon-selected.fd51af73.png",
+    "static/media/logo.svg": "/PatentPlusInventionProfile/static/media/logo.5d5d9eef.svg",
+    "static/media/navbar-logo.png": "/PatentPlusInventionProfile/static/media/navbar-logo.f2cf8099.png",
+    "static/media/overview-icon-default.png": "/PatentPlusInventionProfile/static/media/overview-icon-default.b32009ee.png",
+    "static/media/overview-icon-selected.png": "/PatentPlusInventionProfile/static/media/overview-icon-selected.587e2c4c.png",
+    "static/media/review-icon-default.png": "/PatentPlusInventionProfile/static/media/review-icon-default.484e4937.png",
+    "static/media/review-icon-selected.png": "/PatentPlusInventionProfile/static/media/review-icon-selected.db06ce43.png",
+    "static/media/user-icon.png": "/PatentPlusInventionProfile/static/media/user-icon.84b84887.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02ed0bc3.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.896dc318.chunk.js",
+    "static/css/main.03b6626c.chunk.css",
+    "static/js/main.57815689.chunk.js"
+  ]
+}
