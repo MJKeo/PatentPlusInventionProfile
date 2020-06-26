@@ -17,19 +17,19 @@
 .title-text {
     font-size: 70px;
     color: #2E2D2D;
-    font-family: "Poppins", sans-serif;
 }
 
 .large-button {
-    color: #2E71F7;
+    color: white;
     text-decoration: none;
     border-radius: 10px;
-    border: solid;
-    border-color: #2E71F7;
-    background: none;
+    border: none;
+    background-color: #3671E8;
     font-size: 40px;
     margin-top: 60px;
-    transition: 0.2s;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.4s;
 }
 
 /* Makes it so there's no border when you click on it */
@@ -38,8 +38,7 @@
 }
 
 .large-button:hover {
-    color: #6699FF;
-    border-color: #6699FF;
+    background-color: #003BB1;
 }
 
 @keyframes fade-in {

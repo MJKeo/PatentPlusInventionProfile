@@ -45,11 +45,13 @@ class FirstSection extends Component {
             this.props.updateProgress(40);
         } else if (this.state.questionNumber == 3 && this.refs.primaryInvent.getText() != "") { // move on to question 4
             success = true;
+            this.props.setUserName(this.refs.primaryInvent.getText().split(" ")[0]);
             this.refs.inventNameTitle.textContent += this.refs.primaryInvent.getText().split(" ")[0] + "?"
             this.refs.question4.classList.remove("hidden")
             this.props.updateProgress(60);
         } else if (this.state.questionNumber == 4 && this.refs.inventName.getText() != "") { // move on to question 5
             success = true;
+            this.props.setInventionName(this.refs.inventName.getText());
             this.refs.divisionTitle.textContent += this.refs.inventName.getText() + " belong?"
             this.refs.question5.classList.remove("hidden");
             this.props.updateProgress(80);
@@ -57,6 +59,7 @@ class FirstSection extends Component {
         } else {
             if (this.refs.dropdown.getSelected() != "") {
                 success = true;
+                this.props.updateProgress(102)
                 this.flyLeft();
             }
         }

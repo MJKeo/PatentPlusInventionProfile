@@ -61,9 +61,15 @@ class DropDown extends Component {
                     <div ref="dropdown" class="dropdown hidden" style={{left: this.props.indent}}>
                         {
                             this.props.items.map((item, index) => {
-                                return (
-                                    <h1 class="dropdown-item dropdown-border-bottom" onClick={() => this.handleSelect(item)}>{item}</h1>
-                                )
+                                if (index == this.props.items.length - 1) {
+                                    return (
+                                        <h1 class="dropdown-item dropdown-border-bottom dropdown-last-option" onClick={() => this.handleSelect(item)}>{item}</h1>
+                                    )
+                                } else {
+                                    return (
+                                        <h1 class="dropdown-item dropdown-border-bottom" onClick={() => this.handleSelect(item)}>{item}</h1>
+                                    )
+                                }
                             })
                         }
                     </div>

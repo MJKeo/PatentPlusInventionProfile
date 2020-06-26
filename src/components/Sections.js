@@ -25,10 +25,16 @@ class Sections extends Component {
           progressBarPercent: 0
         };
 
+        // variables
+        this.userName = "UNDEFINED"
+        this.inventionName = "UNDEFINED"
+
         // methods
         this.transitionBetweenScreens = this.transitionBetweenScreens.bind(this);
         this.sleep = this.sleep.bind(this);
         this.updateProgress = this.updateProgress.bind(this);
+        this.setUserName = this.setUserName.bind(this);
+        this.setInventionName = this.setInventionName.bind(this);
     }
 
     async transitionBetweenScreens(newSectionIndex) {
@@ -36,6 +42,11 @@ class Sections extends Component {
         this.setState({
             sectionIndex: newSectionIndex
         })
+        if (newSectionIndex == 1) {
+            this.refs.sectionBar.selectDetails();
+        } else if (newSectionIndex == 2) {
+            this.refs.sectionBar.selectReview();
+        }
     }
 
     sleep(milliseconds) {
@@ -46,13 +57,21 @@ class Sections extends Component {
         this.refs.percentBar.changeProgress(percent);
     }
 
+    setUserName(name) {
+        this.userName = name
+    }
+
+    setInventionName(name) {
+        this.inventionName = name
+    }
+
     render() {
-        const sectionList = [<FirstSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress}/>, <SecondSection />, <ThirdSection />]
+        const sectionList = [<FirstSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} setUserName={this.setUserName} setInventionName={this.setInventionName}/>,<SecondSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>,<ThirdSection updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>]
         const toBeRendered = sectionList[this.state.sectionIndex]
 
         return (
             <div class="content-div">
-                <SectionBar />
+                <SectionBar ref="sectionBar" />
                 <ProgressBar ref="percentBar"/>
                 {toBeRendered}
             </div>

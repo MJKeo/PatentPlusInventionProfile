@@ -51,3 +51,8 @@
     color: rgba(47,96,196,1);
     padding: 10px 0px 0px 0px;
 }
+
+.dropdown-last-option {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+}

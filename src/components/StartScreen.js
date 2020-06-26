@@ -25,6 +25,7 @@ class StartScreen extends Component {
         return (
             <div class="centering-div">
                 <h1 class="title-text">Patent Plus Invention Profile</h1>
+                <h1 class="title-text">Demo</h1>
                 <button class="large-button" onClick={this.transition}>Get Started</button>
             </div>
         )

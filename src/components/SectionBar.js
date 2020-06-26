@@ -39,6 +39,7 @@ class PageBar extends Component {
     selectOverview() {
         this.refs.overviewIcon.classList.add("section-bar-image-selected")
         this.refs.overview.classList.add("selected")
+        this.refs.overviewText.classList.add("section-bar-text-selected")
         this.setState({
             overviewStatus: 1
         })
@@ -47,6 +48,7 @@ class PageBar extends Component {
     selectDetails() {
         this.refs.line1.classList.add("section-bar-line-selected")
         this.refs.detailsIcon.classList.add("section-bar-image-selected")
+        this.refs.detailsText.classList.add("section-bar-text-selected")
         this.refs.details.classList.add("selected")
         this.setState({
             detailsStatus: 1
@@ -56,6 +58,7 @@ class PageBar extends Component {
     selectReview() {
         this.refs.line2.classList.add("section-bar-line-selected")
         this.refs.reviewIcon.classList.add("section-bar-image-selected")
+        this.refs.reviewText.classList.add("section-bar-text-selected")
         this.refs.review.classList.add("selected")
         this.setState({
             reviewStatus: 1
@@ -69,16 +72,25 @@ class PageBar extends Component {
         
         return (
             <div class="main-bar-div">
-                <div ref="overview" class="section-bar-item">
-                    <img ref="overviewIcon" class="overview-icon" src={overViewIcon} alt="overview" />
+                <div class="section-bar-div">
+                    <div ref="overview" class="section-bar-item">
+                        <img ref="overviewIcon" class="overview-icon" src={overViewIcon} alt="overview" />
+                    </div>
+                    <h1 ref="overviewText" class="section-bar-text">Overview</h1>
                 </div>
                 <div ref="line1" class="section-bar-line"></div>
-                <div ref="details" class="section-bar-item">
-                    <img ref="detailsIcon" class="details-icon" src={detailsIcon} alt="overview" onClick={this.selectDetails}/>
+                <div class="section-bar-div">
+                    <div ref="details" class="section-bar-item">
+                        <img ref="detailsIcon" class="details-icon" src={detailsIcon} alt="overview" onClick={this.selectDetails}/>
+                    </div>
+                    <h1 ref="detailsText" class="section-bar-text">Invention Details</h1>
                 </div>
                 <div ref="line2" class="section-bar-line"></div>
-                <div ref="review" class="section-bar-item">
-                    <img ref="reviewIcon" class="review-icon" src={reviewIcon} alt="overview" onClick={this.selectReview}/>
+                <div class="section-bar-div">
+                    <div ref="review" class="section-bar-item">
+                        <img ref="reviewIcon" class="review-icon" src={reviewIcon} alt="overview" onClick={this.selectReview}/>
+                    </div>
+                    <h1 ref="reviewText" class="section-bar-text">Final Review</h1>
                 </div>
             </div>
         )

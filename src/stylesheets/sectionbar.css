@@ -59,3 +59,23 @@
 .selected {
     border-color: #3366CC;
 }
+
+.section-bar-div {
+    width: 100px;
+    margin-right: -15px;
+    height: 85px;
+}
+
+.section-bar-text {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    top: 190px;
+    margin-left: -32.5px;
+    font-size: 14px;
+    color: #707070;
+}
+
+.section-bar-text-selected {
+    color: #3366CC !important;
+}

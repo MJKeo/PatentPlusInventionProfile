@@ -45,7 +45,7 @@ class Main extends Component {
     }
 
     render() {
-        var pages = [<Sections />, <StartScreen transitionBetweenScreens={this.transitionBetweenScreens} />]
+        var pages = [<StartScreen transitionBetweenScreens={this.transitionBetweenScreens} />,<Sections />]
         var toRender = pages[this.state.pageIndex]
         console.log(this.state.pageIndex)
 

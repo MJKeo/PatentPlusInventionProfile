@@ -1,22 +1,17 @@
 .main-background {
-    background-color: #F4F4F4;
+    background-color: white;
     min-height: 100vh;
     padding-bottom: 75px;
 }
 
 .content-div {
-    margin-top: 25px;
-    min-height: 850px;
-    background: white;
-    width: 80%;
-    margin-left: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    border: solid;
-    border-color: lightgray;
-    border-width: 0.5px;
+    margin-top: 10px;
+    min-height: 400px;
+    width: 90%;
+    margin-left: 5%;
 
     padding: 15px;
+    margin-bottom: 25px;
 }
 
 .navbar {
