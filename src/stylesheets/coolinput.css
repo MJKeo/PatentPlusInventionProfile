@@ -2,18 +2,19 @@
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .input-box span {
     position: absolute;
     color: rgba(0,0,0,0.5);
     transition: all 0.2s;
+    font-size: 14px;
 }
 
 .input-box input:valid ~span,
 .input-box input:focus ~span {
-    transform: translateY(-20px);
+    transform: translateY(-16px);
     color: #2F60C4;
 }
 
@@ -23,5 +24,5 @@
     background: transparent;
     border-bottom: 2px solid rgba(0,0,0,0.5);
     width: 25%;
-    min-width: 300px;
+    min-width: 275px;
 }

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
-import "../../stylesheets/documents.css";
+import Dropdown from "../smaller components/Dropdown.js";
+import "../../stylesheets/fourth.css";
 
 /*
     THIS COMPONENT WILL HAVE THE FOLLOWING:
     
 */
 
-class Discuss extends Component {
+class Fourth extends Component {
     constructor(props) {
         super(props);
 
@@ -32,27 +34,20 @@ class Discuss extends Component {
     }
 
     showMore() {
+        this.props.updateProgress(56);
         this.flyLeft();
-        this.props.updateProgress(102)
     }
 
     render() {
-        console.log("refresh");
-        if (this.refs.switch != undefined && this.refs.switch.getSelected() == "No") {
-            console.log(this.refs.switch.getSelected())
-            this.refs.questionSubquestion.classList.add("hidden");
-        } else if (this.refs.switch != undefined) {
-            this.refs.questionSubquestion.classList.remove("hidden");
-        }
-
         return (
-            <div ref="wholePage" class="subsection-main-div on-right">
-                <h1 class="question-title">Are there any documents that help fully disclose your idea that you would like to disclose?</h1>
+            <div ref='wholePage' class="subsection-main-div on-right">
+                <h1 class="question-title">{"How do you quantify the technical effect of “self-cleaning” achieved by " + this.props.names[1] + "?"}</h1>
+                <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <input type="file" class="file"></input>
                 <div></div>
-                <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Not Now</button>
+                <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Next Page</button>
             </div>
         )
     }
 
-} export default Discuss
+} export default Fourth

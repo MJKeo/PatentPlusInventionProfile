@@ -65,8 +65,7 @@ class SecondSection extends Component {
                 <Discuss transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>,
                 <Documents transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>]
         const toRender = list[this.state.index]
-        const thing = "←"
-        const thing2 = "→"
+
         return (
             <div ref="wholePage" class="section-main-div on-right">
                 <h1 class="heading">Invention Details</h1>

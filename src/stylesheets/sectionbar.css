@@ -7,12 +7,12 @@
 }
 
 .section-bar-item {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     border: solid;
     border-color: #707070;
     border-width: 2px;
-    border-radius: 42.5px;
+    border-radius: 35px;
 
     display: flex;
     flex-direction: row;
@@ -21,29 +21,35 @@
 }
 
 .overview-icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     align-self: center;
     opacity: 0.5;
 }
 
 .details-icon {
-    height: 60px;
-    width: 60px;
-    margin-left: 5px;
+    height: 35px;
+    width: 35px;
+    align-self: center;
+}
+
+.novelty-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 2px;
     align-self: center;
     opacity: 0.5;
 }
 
 .review-icon {
-    height: 45px;
-    width: 45px;
+    height: 36px;
+    width: 36px;
     align-self: center;
     opacity: 0.5;
 }
 
 .section-bar-line {
-    width: 15vw;
+    width: 10vw;
     height: 2px;
     background-color: #707070;
 }
@@ -62,17 +68,17 @@
 
 .section-bar-div {
     width: 100px;
-    margin-right: -15px;
-    height: 85px;
+    margin-right: -30px;
+    height: 70px;
 }
 
 .section-bar-text {
     position: absolute;
-    width: 150px;
+    width: 140px;
     text-align: center;
-    top: 190px;
-    margin-left: -32.5px;
-    font-size: 14px;
+    top: 150px;
+    margin-left: -35px;
+    font-size: 12px;
     color: #707070;
 }
 

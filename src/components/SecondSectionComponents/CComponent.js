@@ -56,7 +56,7 @@ class CComponent extends Component {
         return (
             <div ref="wholePage" class="component-div">
                 <h1 class="question-subtitle component-sub">{this.props.title}</h1>
-                <CoolInput ref="name" placeholder={"component name"} indent={"35px"} spanIndent={"81px"} />
+                <CoolInput ref="name" placeholder={"component name"} indent={"35px"} spanIndent={"70px"} />
                 <h1 class="question-subtitle">What is the purpose of this component?</h1>
                 <textarea ref="a1" type="text" rows="2" class="cc-input"></textarea>
                 <div ref="part2" class="dashed-border-left hidden">

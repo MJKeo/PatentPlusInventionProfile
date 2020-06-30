@@ -21,8 +21,8 @@ class FirstBonus extends Component {
         return (
             <div>
                 <h1 class="question-subtitle">Please provide synonyms/examples  for first fibers and secondary fibers</h1>
-                <CoolInput ref="name" placeholder={"First fibers"} indent={"45px"} spanIndent={"186px"} />
-                <CoolInput ref="name" placeholder={"Secondary fibers"} indent={"45px"} spanIndent={"186px"} />
+                <CoolInput ref="name" placeholder={"First fibers"} indent={"45px"} spanIndent={"176px"} />
+                <CoolInput ref="name" placeholder={"Secondary fibers"} indent={"45px"} spanIndent={"176px"} />
             </div>
         )
     }

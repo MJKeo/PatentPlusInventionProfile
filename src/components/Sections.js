@@ -5,6 +5,7 @@ import ProgressBar from "./ProgressBar.js";
 import FirstSection from "./FirstSection";
 import SecondSection from "./SecondSection";
 import ThirdSection from "./ThirdSection";
+import FourthSection from "./FourthSection";
 import "../stylesheets/sections.css"
 
 /*
@@ -45,6 +46,8 @@ class Sections extends Component {
         if (newSectionIndex == 1) {
             this.refs.sectionBar.selectDetails();
         } else if (newSectionIndex == 2) {
+            this.refs.sectionBar.selectNovelty();
+        } else if (newSectionIndex == 3) {
             this.refs.sectionBar.selectReview();
         }
     }
@@ -66,7 +69,10 @@ class Sections extends Component {
     }
 
     render() {
-        const sectionList = [<FirstSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} setUserName={this.setUserName} setInventionName={this.setInventionName}/>,<SecondSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>,<ThirdSection updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>]
+        const sectionList = [<FirstSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} setUserName={this.setUserName} setInventionName={this.setInventionName}/>,
+        <SecondSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>,
+        <ThirdSection transition={this.transitionBetweenScreens} updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>,
+        <FourthSection updateProgress={this.updateProgress} names={[this.userName,this.inventionName]}/>]
         const toBeRendered = sectionList[this.state.sectionIndex]
 
         return (

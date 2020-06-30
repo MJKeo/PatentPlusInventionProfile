@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import First from "./ThirdSectionComponents/First";
+import Second from "./ThirdSectionComponents/Second";
+import Third from "./ThirdSectionComponents/Third";
+import Fourth from "./ThirdSectionComponents/Fourth";
+import Fifth from "./ThirdSectionComponents/Fifth";
+import Sixth from "./ThirdSectionComponents/Sixth";
+import Seventh from "./ThirdSectionComponents/Seventh";
 import "../stylesheets/thirdsection.css";
 
 /*
@@ -11,10 +18,13 @@ class ThirdSection extends Component {
         super(props);
 
         this.state = {
-          isOpen: false
+          isOpen: false,
+          index: 0
         };
 
         this.flyLeft = this.flyLeft.bind(this);
+        this.changeIndex = this.changeIndex.bind(this);
+        this.sleep = this.sleep.bind(this);
     }
 
     componentDidMount() {
@@ -26,17 +36,39 @@ class ThirdSection extends Component {
         this.refs.wholePage.classList.remove("fly-in")
         this.refs.wholePage.classList.remove("on-right")
         this.refs.wholePage.classList.add("fly-out")
-        this.props.transition();
+        this.props.transition(3);
+    }
+
+    async changeIndex() {
+        await(this.sleep(500))
+        this.setState({
+            index: this.state.index + 1
+        })
+        console.log(this.state.index)
+        if (this.state.index == 7) {
+            console.log("YES")
+            this.flyLeft();
+        }
+    }
+
+    sleep(milliseconds) {
+        return new Promise(resolve => setTimeout(resolve, milliseconds))
     }
 
     render() {
+        const list=[<First transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names} />, 
+            <Second transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>,
+            <Third transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>,
+            <Fourth transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>,
+            <Fifth transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>,
+            <Sixth transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>,
+            <Seventh transition={this.changeIndex} updateProgress={this.props.updateProgress} names={this.props.names}/>]
+        const toRender = list[this.state.index]
+
         return (
             <div ref="wholePage" class="section-main-div on-right">
-                <h1 class="heading">Final Review</h1>
-                <div class="centered">
-                    <h1 class="title-text">{"Thank You " + this.props.names[0] + " for trying" }</h1>
-                    <h1 class="title-text">{"the PatentPlus demo!" }</h1>
-                </div>
+                <h1 class="heading">Novelty Determination</h1>
+                {toRender}
             </div>
         )
     }
