@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/PatentPlusInventionProfile/static/css/main.d64a7a9e.chunk.css",
-    "main.js": "/PatentPlusInventionProfile/static/js/main.687fd8ac.chunk.js",
-    "main.js.map": "/PatentPlusInventionProfile/static/js/main.687fd8ac.chunk.js.map",
+    "main.css": "/PatentPlusInventionProfile/static/css/main.4b12570b.chunk.css",
+    "main.js": "/PatentPlusInventionProfile/static/js/main.48c9939f.chunk.js",
+    "main.js.map": "/PatentPlusInventionProfile/static/js/main.48c9939f.chunk.js.map",
     "runtime-main.js": "/PatentPlusInventionProfile/static/js/runtime-main.02ed0bc3.js",
     "runtime-main.js.map": "/PatentPlusInventionProfile/static/js/runtime-main.02ed0bc3.js.map",
     "static/css/2.af3c1da9.chunk.css": "/PatentPlusInventionProfile/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.8b4fd760.chunk.js": "/PatentPlusInventionProfile/static/js/2.8b4fd760.chunk.js",
-    "static/js/2.8b4fd760.chunk.js.map": "/PatentPlusInventionProfile/static/js/2.8b4fd760.chunk.js.map",
+    "static/js/2.4cb30b97.chunk.js": "/PatentPlusInventionProfile/static/js/2.4cb30b97.chunk.js",
+    "static/js/2.4cb30b97.chunk.js.map": "/PatentPlusInventionProfile/static/js/2.4cb30b97.chunk.js.map",
     "index.html": "/PatentPlusInventionProfile/index.html",
-    "precache-manifest.b8257264f86804aa55ec85c40b6ab2f1.js": "/PatentPlusInventionProfile/precache-manifest.b8257264f86804aa55ec85c40b6ab2f1.js",
+    "precache-manifest.69446bb27024e7dec17d0b3f5dbef48e.js": "/PatentPlusInventionProfile/precache-manifest.69446bb27024e7dec17d0b3f5dbef48e.js",
     "service-worker.js": "/PatentPlusInventionProfile/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/PatentPlusInventionProfile/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.d64a7a9e.chunk.css.map": "/PatentPlusInventionProfile/static/css/main.d64a7a9e.chunk.css.map",
-    "static/js/2.8b4fd760.chunk.js.LICENSE.txt": "/PatentPlusInventionProfile/static/js/2.8b4fd760.chunk.js.LICENSE.txt",
+    "static/css/main.4b12570b.chunk.css.map": "/PatentPlusInventionProfile/static/css/main.4b12570b.chunk.css.map",
+    "static/js/2.4cb30b97.chunk.js.LICENSE.txt": "/PatentPlusInventionProfile/static/js/2.4cb30b97.chunk.js.LICENSE.txt",
+    "static/media/add-file-icon.png": "/PatentPlusInventionProfile/static/media/add-file-icon.fde4d564.png",
     "static/media/details-icon-default.png": "/PatentPlusInventionProfile/static/media/details-icon-default.7e72d634.png",
     "static/media/details-icon-selected.png": "/PatentPlusInventionProfile/static/media/details-icon-selected.b3317f24.png",
     "static/media/logo.svg": "/PatentPlusInventionProfile/static/media/logo.5d5d9eef.svg",
@@ -29,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.02ed0bc3.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.8b4fd760.chunk.js",
-    "static/css/main.d64a7a9e.chunk.css",
-    "static/js/main.687fd8ac.chunk.js"
+    "static/js/2.4cb30b97.chunk.js",
+    "static/css/main.4b12570b.chunk.css",
+    "static/js/main.48c9939f.chunk.js"
   ]
 }
