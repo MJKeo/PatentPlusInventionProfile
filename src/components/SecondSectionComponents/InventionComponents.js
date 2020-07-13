@@ -3,6 +3,7 @@ import CComponent from "./CComponent.js";
 import FirstBonus from "../BonusComponents/FirstBonus.js";
 import SecondBonus from "../BonusComponents/SecondBonus.js";
 import ThirdBonus from "../BonusComponents/ThirdBonus.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/inventioncomponents.css";
 
 /*
@@ -56,7 +57,7 @@ class InventionComponents extends Component {
     render() {
         return (
             <div ref="wholePage" class="on-right subsection-main-div">
-                <h1 class="question-title">{"What are the main components of " + this.props.names[1] + "?"}</h1>
+                <FileAdder title={"What are the main components of " + this.props.names[1] + "?"} />
                 {
                     this.state.components.map((item, index) => {
                         if (index == 0) {

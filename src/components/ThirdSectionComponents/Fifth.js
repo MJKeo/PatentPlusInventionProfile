@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
 import Dropdown from "../smaller components/Dropdown.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/documents.css";
 
 /*
@@ -41,7 +42,7 @@ class Fifth extends Component {
     render() {
         return (
             <div ref='wholePage' class="subsection-main-div on-right">
-                <h1 class="question-title">{"What structural feature enables " + this.props.names[1] + " to be self-cleaning and biodegradable?"}</h1>
+                <FileAdder title={"What structural feature enables " + this.props.names[1] + " to be self-cleaning and biodegradable?"} />
                 <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <div></div>
                 <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Next Page</button>

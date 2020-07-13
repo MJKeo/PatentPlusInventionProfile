@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
 import Dropdown from "../smaller components/Dropdown.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/manydropdowns.css";
 /*
     THIS COMPONENT WILL HAVE THE FOLLOWING:
@@ -63,7 +64,7 @@ class ManyDropdowns extends Component {
     render() {
         return (
             <div ref="wholePage" class="subsection-main-div on-right">
-                <h1 ref="typeTitle" class="question-title">{"What type of invention is " + this.props.names[1] + "?"}</h1>
+                <FileAdder title={"What type of invention is " + this.props.names[1] + "?"} />
                 <Dropdown ref="dropdown1" indent={"45px"} items={["Software","Method/Process", "Physical Product", "+ More"]}/>
                 <div ref="question2" class="hidden">
                     <h1 ref="fieldTitle" class="question-title">{"What is the field of your invention, " + this.props.names[0] + "?"}</h1>

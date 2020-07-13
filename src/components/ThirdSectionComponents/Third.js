@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
 import Dropdown from "../smaller components/Dropdown.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/documents.css";
 
 /*
@@ -41,7 +42,7 @@ class Third extends Component {
     render() {
         return (
             <div ref='wholePage' class="subsection-main-div on-right">
-                <h1 class="question-title">How would you describe the technical effect achieved by your invention?</h1>
+                <FileAdder title={"How would you describe the technical effect achieved by your invention?"} />
                 <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <div></div>
                 <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Next Page</button>

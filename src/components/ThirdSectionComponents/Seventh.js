@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
 import Dropdown from "../smaller components/Dropdown.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/seventh.css";
 
 /*
@@ -47,11 +48,7 @@ class Seventh extends Component {
 
         return (
             <div ref='wholePage' class="subsection-main-div on-right">
-                <h1 class="question-title">Would you like to submit any files to help explain the novelty of your invention? </h1>
-                <Switch ref="switch" firstValue={"No"} secondValue={"Yes"} refreshParent={() => this.setState({})} indent={"45px"}/>
-                <div ref="sub" class="dashed-border-left hidden">
-                    <input type="file" class="file"></input>
-                </div>
+                <FileAdder title={"Please attach any files to help explain the novelty of your invention"} />
                 <div></div>
                 <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Next Page</button>
             </div>

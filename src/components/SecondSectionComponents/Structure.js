@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/structure.css";
 
 /*
@@ -51,7 +52,7 @@ class Structure extends Component {
     render() {
         return (
             <div ref="wholePage" class="subsection-main-div on-right">
-                <h1 class="question-title">What does the structure/design of the web look like?</h1>
+                <FileAdder title={"What does the structure/design of the web look like?"} />
                 <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <div ref="questionSubquestion" class="dashed-border-left hidden">
                     <h1 class="question-subtitle">What are the pore sizes?</h1>

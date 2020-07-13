@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
 import Dropdown from "../smaller components/Dropdown.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/documents.css";
 
 /*
@@ -48,7 +49,7 @@ class Sixth extends Component {
     render() {
         return (
             <div ref='wholePage' class="subsection-main-div on-right">
-                <h1 class="question-title">Do you know of any alternative structural features that could achieve this technical effect? </h1>
+                <FileAdder title={"Do you know of any alternative structural features that could achieve this technical effect?"} />
                 <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <div ref="subquestion" class="dashed-border-left hidden">
                     <h1 class="question-subtitle">I notice you used the term “MFC” could you provide a synonym for this term? </h1>

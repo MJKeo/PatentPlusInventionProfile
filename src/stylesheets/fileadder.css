@@ -1,0 +1,54 @@
+.file-adder-whole {
+    display: flex;
+    flex-direction: row;
+}
+
+.file-adder-title {
+    font-size: 25px !important;
+    color: #4E4E4E;
+    margin-left: 25px;
+    margin-top: 28px !important;
+    margin-top: 12px !important;
+}
+
+.file-adder-main-div {
+    margin-left: 15px;
+    width: 200px;
+    height: 25px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.file-adder-label {
+    width: 25px;
+    height: 25px;
+    margin-left: -25px;
+    /* border: solid; */
+}
+
+.file-adder-label:hover {
+    cursor: pointer;
+}
+
+.file-adder-image {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+.file-adder-text {
+    height: 5px;
+    align-self: center;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.hiding-file-input {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}

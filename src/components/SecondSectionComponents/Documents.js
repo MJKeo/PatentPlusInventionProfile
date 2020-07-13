@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Switch from "../smaller components/Switch.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/documents.css";
 
 /*
@@ -47,10 +48,9 @@ class Discuss extends Component {
 
         return (
             <div ref="wholePage" class="subsection-main-div on-right">
-                <h1 class="question-title">Are there any documents that help fully disclose your idea that you would like to disclose?</h1>
-                <input type="file" class="file"></input>
+                <FileAdder title={"Please attach any files that help fully disclose your idea"} />
                 <div></div>
-                <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Not Now</button>
+                <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Continue</button>
             </div>
         )
     }

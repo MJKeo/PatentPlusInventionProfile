@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CoolInput from "../smaller components/CoolInput.js";
 import Switch from "../smaller components/Switch.js";
 import Dropdown from "../smaller components/Dropdown.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/fourth.css";
 
 /*
@@ -41,7 +42,7 @@ class Fourth extends Component {
     render() {
         return (
             <div ref='wholePage' class="subsection-main-div on-right">
-                <h1 class="question-title">{"How do you quantify the technical effect of “self-cleaning” achieved by " + this.props.names[1] + "?"}</h1>
+                <FileAdder title={"How do you quantify the technical effect of “self-cleaning” achieved by " + this.props.names[1] + "?"} />
                 <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <input type="file" class="file"></input>
                 <div></div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/description.css";
 
 /*
@@ -39,7 +40,7 @@ class Description extends Component {
     render() {
         return (
             <div ref="wholePage" class="on-right subsection-main-div">
-                <h1 class="question-title">{"Please briefly describe " + this.props.names[1] + "."}</h1>
+                <FileAdder title={"Please briefly describe " + this.props.names[1] + "."} />
                 <textarea ref="description" type="text" rows="2" class="description-input"></textarea>
                 <div></div>
                 <button ref="continueButton" class="button section-button-indent" onClick={this.showMore}>Continue</button>

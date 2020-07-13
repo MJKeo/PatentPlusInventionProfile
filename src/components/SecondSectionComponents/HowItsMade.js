@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Switch from "../smaller components/Switch.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/howitsmade.css";
 
 /*
@@ -64,7 +65,7 @@ class HowItsMade extends Component {
 
         return (
             <div ref="wholePage" class="subsection-main-div on-right">
-                <h1 class="question-title">How is the fibrous media made?</h1>
+                <FileAdder title={"How is the fibrous media made?"} />
                 <textarea ref="a1" type="text" rows="2" class="him-input"></textarea>
                 <div ref="questionSubquestion" class="dashed-border-left hidden">
                     <h1 class="question-subtitle">Are there any synonyms for this term?</h1>

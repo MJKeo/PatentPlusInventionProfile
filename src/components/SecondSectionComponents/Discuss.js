@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Switch from "../smaller components/Switch.js";
+import FileAdder from "../smaller components/FileAdder.js";
 import "../../stylesheets/discuss.css";
 
 /*
@@ -53,7 +54,7 @@ class Discuss extends Component {
 
         return (
             <div ref="wholePage" class="subsection-main-div on-right">
-                <h1 class="question-title">Are there any other aspects of your invention that you’d like to discuss?</h1>
+                <FileAdder title={"Are there any other aspects of your invention that you’d like to discuss?"} />
                 <Switch ref="switch" firstValue={"No"} secondValue={"Yes"} refreshParent={() => this.setState({})} indent={"45px"} /> {/*call this.refs.switch.getSelected() to get the value it's on*/}
                 <div ref="questionSubquestion" class="dashed-border-left hidden">
                     <h1 class="question-subtitle">Please feel free to write down your thoughts below.</h1>
